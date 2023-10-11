@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public operator fun CharSequence.times(count: Int): String {
+    return repeat(count)
+}
+fun main() {
+    val input=Scanner(System.`in` )
+    do{
+    print("masukkan nama : ")
+    var nama = input.next()
+    
+    print("Masukkan Nilai : ")
+    var s:Int=input.nextInt()
+    println("=" *30)
+    println("Hai "+nama)
+    if(s<8) {
+        println(" Nilai kamu jelek")
+    }else if(s>=8 && s<=10) {
+        println(" Nilai kamu A ")
+    } else {
+        println(" input nilai kamu ngawur")
+    }
+    println("=" *30)
+    println()
+    print("ingin mengulang y/t : ")
+    var ulang = input.next()
+    }while(ulang=="y")
+}
